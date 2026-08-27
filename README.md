@@ -1,5 +1,4 @@
 <!-- Carátula -->
-
 <div align="center">
     <img src="img/logo-upc.png">
 </div>
@@ -10,39 +9,27 @@
 
 # Universidad Peruana de Ciencias Aplicadas
 
-</div>
-
-<br>
-
 <h3 style="text-align: center; font-weight: normal; font-size: 22px; margin-top: 0;">
- Carrera de Ingeniería de Software
+Carrera de Ingeniería de Software
 </h3>
 
 <br><br>
 
-<div align="center">
-
-**Ciclo:** 2026-20
-
-**Curso:** 1ASI0730 – Aplicaciones Web
-
-**NRC:** 8084
-
+**Ciclo:** 2026-20  
+**Curso:** 1ASI0730 – Aplicaciones Web  
+**NRC:** 8084  
 **Docente:** Velásquez Núñez, Ángel Augusto
 
 <br><br>
 
 ## "Informe del trabajo final"
 
-**Startup:** 
-
-**Producto:** 
+**Startup:**  
+**Producto:**  
 
 <br><br>
 
-## Relación de integrantes:
-
-<br>
+## Relación de integrantes
 
 | Código | Apellido Y Nombres |
 |--------|---------------------|
