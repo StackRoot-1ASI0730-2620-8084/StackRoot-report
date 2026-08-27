@@ -4,36 +4,57 @@
     <img src="img/logo-upc.png">
 </div>
 
+<br>
+
 <div align="center">
 
 # Universidad Peruana de Ciencias Aplicadas
 
-## Carrera de Ingeniería de Software
-
 </div>
 
-<div align="center"> 
+<br>
 
-**Ciclo:** 2026-20  
-**Curso:** 1ASI0730 – Aplicaciones Web<br>
-**NRC:**  Velásquez Núñez, Ángel Augusto<br>
-**Docente:** Efraín Ricardo Bautista Ubillús
+<h3 style="text-align: center; font-weight: normal; font-size: 22px; margin-top: 0;">
+ Carrera de Ingeniería de Software
+</h3>
+
+<br><br>
+
+<div align="center">
+
+**Ciclo:** 2026-20
+
+**Curso:** 1ASI0730 – Aplicaciones Web
+
+**NRC:** 8084
+
+**Docente:** Velásquez Núñez, Ángel Augusto
+
+<br><br>
 
 ## "Informe del trabajo final"
-**Startup:** <br>
+
+**Startup:** 
+
 **Producto:** 
 
+<br><br>
 
-## Relacion de integrantes:
+## Relación de integrantes:
 
+<br>
 
-| Código      | Integrante                          |
-|-------------|-------------------------------------|
-| U20 |  |
-| U20 |  |
-| U20 |  |
-| U20 |  |
+| Código | Apellido Y Nombres |
+|--------|---------------------|
+| U20    |                     |
+| U20    |                     |
+| U20    |                     |
+| U20    |                     |
 
-<div style="font-weight: bold;"> Agosto 2026</div>
+<br><br>
+
+<div style="font-weight: bold;">Agosto 2026</div>
 
 </div>
+
+<div style="page-break-after: always;"></div>
