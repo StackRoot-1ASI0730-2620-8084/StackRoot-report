@@ -37,6 +37,7 @@ Carrera de Ingeniería de Software
 | U20    |                     |
 | U20    |                     |
 | U20    |                     |
+| U20    |                     |
 
 <br><br>
 
