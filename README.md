@@ -35,7 +35,7 @@ Carrera de Ingeniería de Software
 | U20    |                     |
 | U20    |                     |
 | U20    |                     |
-| U20    |                     |
+| U202412903 | Lozano Quispe, Fabricio Jofred |                 |
 | U202213185 | Medina Merma, Ingrid Melani |
 
 <br>
