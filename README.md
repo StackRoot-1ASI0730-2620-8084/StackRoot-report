@@ -22,7 +22,7 @@ Carrera de Ingeniería de Software
 
 ## "Informe del trabajo final"
 
-**Startup:**  
+**Startup:** StackRoot 
 **Producto:**  
 
 <br>
@@ -148,14 +148,13 @@ Carrera de Ingeniería de Software
     - [5.3.3. Evaluaciones según heurísticas](./Capitulo_5.md#533-evaluaciones-según-heurísticas)
   - [5.4. Video About-the-Product](./Capitulo_5.md#54-video-about-the-product)
 
-- [Anexos](./Anexos.md)
 - [Conclusiones y Bibliografía](./Conclusiones-Bibliografia.md)
-
+- [Anexos](./Anexos.md)
 <!-- Salto de Pagina -->
 <div style="page-break-after: always;"></div>
 
 ## Student Outcome
-| Criterio específico | Acciones realizadas | Conclusiones |
-|---|---|---|
-| Trabaja en equipo para proporcionar liderazgo en forma conjunta |*AV1* <br>  |    |
-| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | *AV1*<br> |  |
+| Entregable | Criterio específico | Acciones realizadas | Conclusiones |
+|---|---|---||---|
+|*AV1*| Trabaja en equipo para proporcionar liderazgo en forma conjunta | <br>  |    |
+|*AV1*| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | <br> |  |
