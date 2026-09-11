@@ -1,6 +1,6 @@
 <!-- Carátula -->
 <div align="center">
-    <img src="img/logo-upc.png">
+    <img src="assets/logo-upc.png">
 </div>
 
 <div align="center">
@@ -22,7 +22,7 @@ Carrera de Ingeniería de Software
 
 ## "Informe del trabajo final"
 
-**Startup:** StackRoot 
+**Startup:** StackRoot<br> 
 **Producto:**  
 
 <br>
@@ -31,16 +31,15 @@ Carrera de Ingeniería de Software
 
 | Código | Apellido Y Nombres |
 |--------|---------------------|
-| U20    |                     |
-| U20    |                     |
-| U20    |                     |
-| U20    |                     |
-| U202412903 | Lozano Quispe, Fabricio Jofred |                 |
+| U20    |  Checalla Apaza, Renato Emanuel |
+| U202210836 | Peñaranda Caldas, Gabriel Augusto |
+| U202414356 |  Vite Celis, Rodrigo Matias |
+| U202412903 | Lozano Quispe, Fabricio Jofred |                 
 | U202213185 | Medina Merma, Ingrid Melani |
 
 <br>
 
-<div style="font-weight: bold;">Agosto 2026</div>
+<div style="font-weight: bold;">Septiembre 2026</div>
 </div>
 
 <!-- Salto de Pagina -->
@@ -133,23 +132,19 @@ Carrera de Ingeniería de Software
     - [5.1.3. Source Code Style Guide & Conventions](./Capitulo_5.md#513-source-code-style-guide--conventions)
     - [5.1.4. Software Deployment Configuration](./Capitulo_5.md#514-software-deployment-configuration)
   - [5.2. Landing Page, Services & Applications Implementation](./Capitulo_5.md#52-landing-page-services--applications-implementation)
-    - [5.2.X. Sprint n](./Capitulo_5.md#52x-sprint-n)
-      - [5.2.X.1. Sprint Planning n](./Capitulo_5.md#52x1-sprint-planning-n)
-      - [5.2.X.2. Aspect Leaders and Collaborators](./Capitulo_5.md#52x2-aspect-leaders-and-collaborators)
-      - [5.2.X.3. Sprint Backlog n](./Capitulo_5.md#52x3-sprint-backlog-n)
-      - [5.2.X.4. Development Evidence for Sprint Review](./Capitulo_5.md#52x4-development-evidence-for-sprint-review)
-      - [5.2.X.5. Execution Evidence for Sprint Review](./Capitulo_5.md#52x5-execution-evidence-for-sprint-review)
-      - [5.2.X.6. Services Documentation Evidence for Sprint Review](./Capitulo_5.md#52x6-services-documentation-evidence-for-sprint-review)
-      - [5.2.X.7. Software Deployment Evidence for Sprint Review](./Capitulo_5.md#52x7-software-deployment-evidence-for-sprint-review)
-      - [5.2.X.8. Team Collaboration Insights during Sprint](./Capitulo_5.md#52x8-team-collaboration-insights-during-sprint)
-  - [5.3. Validation Interviews](./Capitulo_5.md#53-validation-interviews)
-    - [5.3.1. Diseño de Entrevistas](./Capitulo_5.md#531-diseño-de-entrevistas)
-    - [5.3.2. Registro de Entrevistas](./Capitulo_5.md#532-registro-de-entrevistas)
-    - [5.3.3. Evaluaciones según heurísticas](./Capitulo_5.md#533-evaluaciones-según-heurísticas)
-  - [5.4. Video About-the-Product](./Capitulo_5.md#54-video-about-the-product)
-
-- [Conclusiones y Bibliografía](./Conclusiones-Bibliografia.md)
-- [Anexos](./Anexos.md)
+    - [5.2.1. Sprint 1](./Capitulo_5.md#52x-sprint-n)
+      - [5.2.1.1. Sprint Planning 1](./Capitulo_5.md#52x1-sprint-planning-n)
+      - [5.2.1.2. Aspect Leaders and Collaborators](./Capitulo_5.md#5212-aspect-leaders-and-collaborators)
+      - [5.2.1.3. Sprint Backlog n](./Capitulo_5.md#52x3-sprint-backlog-n)
+      - [5.2.1.4. Development Evidence for Sprint Review](./Capitulo_5.md#52x4-development-evidence-for-sprint-review)
+      - [5.2.1.5. Execution Evidence for Sprint Review](./Capitulo_5.md#5215-execution-evidence-for-sprint-review)
+      - [5.2.1.6. Services Documentation Evidence for Sprint Review](./Capitulo_5.md#5216-services-documentation-evidence-for-sprint-review)
+      - [5.2.1.7. Software Deployment Evidence for Sprint Review](./Capitulo_5.md#5217-software-deployment-evidence-for-sprint-review)
+      - [5.2.1.8. Team Collaboration Insights during Sprint](./Capitulo_5.md#5218-team-collaboration-insights-during-sprint)
+ 
+- [Conclusiones](./Conclusiones-Bibliografia.md#conclusiones)
+- [Bibliografía](./Conclusiones-Bibliografia.md#bibliografía)
+- [Anexos](./Conclusiones-Bibliografia.md#anexos)
 <!-- Salto de Pagina -->
 <div style="page-break-after: always;"></div>
 
