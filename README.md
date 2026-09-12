@@ -151,5 +151,5 @@ Carrera de Ingeniería de Software
 ## Student Outcome
 | Entregable | Criterio específico | Acciones realizadas | Conclusiones |
 |---|---|---|---|
-|*AV1*| Trabaja en equipo para proporcionar liderazgo en forma conjunta | <br>  |    |
-|*AV1*| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. | <br> |  |
+|*AV1*| Trabaja en equipo para proporcionar liderazgo en forma conjunta |  - Renato Checalla <br>- Gabriel Peñaranda<br>- Rodrigo Vite<br>- Fabricio Lozano<br>- Ingrid Medina |    |
+|*AV1*| Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos. |  - Renato Checalla <br>- Gabriel Peñaranda<br>- Rodrigo Vite<br>- Fabricio Lozano<br>- Ingrid Medina |  |
