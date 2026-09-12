@@ -49,7 +49,7 @@ Carrera de Ingeniería de Software
 
 | Versión | Fecha    | Autor       | Descripción de Modificación            |
 | ------- | -------- | ----------- | -------------------------------------- |
-| 1.0     | // |  | Desarrollo de la Estructura del informe |
+| 1.0     | 18/09/2026 | - Renato Checalla <br>- Gabriel Peñaranda<br>- Rodrigo Vite<br>- Fabricio Lozano<br>- Ingrid Medina | Desarrollo de la Estructura del informe |
 
 
 <!-- Salto de Pagina -->
