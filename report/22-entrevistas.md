@@ -59,31 +59,37 @@ A continuación, se presentan las preguntas dirigidas a dueños de negocios pyme
 17. ¿Qué tan seguido gestionas tu negocio a través de canales digitales (redes sociales, e-commerce, pasarelas de pago)?
 18. ¿Prefieres usar el celular o la computadora para gestionar tus pedidos y envíos?
 
+### 2.2.2. Registro de entrevistas
+
 **Segmento 1: Transportistas de Carga Terrestre**
 
 | # | Nombres y Apellidos | Edad | Distrito | Screenshot | URL del video (Microsoft Stream) | Inicio | Duración |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | [Nombre Apellido] | [Edad] | [Distrito] | *(captura del video)* | [URL privado] | [hh:mm:ss] | [mm:ss] |
-| 2 | Juan David Haro Ramos | 21 años | Ate | *(captura del video)* | [URL privado] | [hh:mm:ss] | [mm:ss] |
-| 3 | Ariana Escalante | 24 años | San Juan de Lurigancho | ![Foto](../assets/images/chapter2/captura-entrevista-tres.jpeg) | [Link del video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202414356_upc_edu_pe/IQBiJ8z288igQYB9s0AoTDccAQhiyBpasRQQmkhn2YWMsvY?e=SQi1l2&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) | 00:00:00 | 05:48 |
-
-*Resumen de entrevista 1:*
-
-*Resumen de entrevista 2:* El entrevistado es un joven de 21 años, encargado de logística en una empresa familiar de transporte de carga terrestre con base en Ate, Lima, donde administra una flota de aproximadamente 6 camiones y coordina rutas, viajes y disponibilidad de unidades. Gestiona su trabajo principalmente desde el celular, usando WhatsApp para comunicarse con clientes y conductores y Google Maps para planificar rutas, aunque recurre a la computadora cuando necesita organizar información y llevar mayor control de los viajes. Actualmente, entre 2 y 3 veces por semana la empresa tiene camiones que regresan vacíos por no conseguir carga compatible con la ruta de retorno, una situación que le preocupa porque los costos de combustible, peajes y mantenimiento se mantienen sin generar ingreso en ese tramo. Su método actual depende de la búsqueda informal a través de contactos conocidos, otros transportistas, grupos de WhatsApp y llamadas directas a clientes, un proceso que le frustra porque implica invertir tiempo sin certeza de que la carga realmente esté disponible.
-Frente a la propuesta de una solución tecnológica, el entrevistado muestra disposición inmediata a adoptar una aplicación móvil para publicar su disponibilidad y recibir sugerencias automáticas de carga, estando dispuesto a esperar unos minutos antes de salir con el camión vacío si eso mejora sus posibilidades de conseguir flete. Considera indispensable mantener la negociación del pago y las condiciones directamente con el cliente, fuera de la aplicación, viendo su rol únicamente como el de conectar a ambas partes. Para sentir seguridad durante el trayecto, valora la combinación de calificación de clientes y monitoreo en tiempo real, no uno solo de estos elementos por separado. Finalmente, afirma que usaría la aplicación de forma regular y la recomendaría a otros transportistas o dueños de flota, siempre que funcione bien y las cargas publicadas sean reales.
-
-*Resumen de entrevista 3:* El entrevistado es un transportista independiente de 24 años radicado en San Juan de Lurigancho, propietario y conductor de un furgón liviano de 3.5 a 4 toneladas, quien gestiona la totalidad de sus operaciones mediante el teléfono móvil y aplicaciones como WhatsApp, redes sociales y plataformas de navegación. Actualmente, cerca del 50% de sus viajes de regreso los realiza con el camión vacío, una situación crítica que absorbe casi todo su margen de ganancia debido a los costos de combustible, peajes y las cuotas de financiamiento de su unidad. Su método actual para conseguir fletes de retorno depende de la búsqueda informal en grupos digitales y contactos con choferes experimentados, un proceso frustrante marcado por comisiones abusivas de intermediarios, incertidumbre en los cobros y cierta desconfianza hacia su perfil por su corta edad.
-Ante la propuesta de una solución tecnológica, el conductor muestra una disposición inmediata a adoptar una aplicación móvil para publicar su disponibilidad y recibir sugerencias automáticas de carga, estando dispuesto a esperar entre 30 y 45 minutos en el punto de entrega si eso le asegura un viaje de vuelta rentable. Para operar con total seguridad, considera indispensable la combinación de un sistema de calificación de clientes verificados y el monitoreo del viaje en tiempo real, ya que esto último reduce las llamadas distractoras al volante y respalda su trabajo ante cualquier reclamo. Finalmente, se muestra flexible respecto a la gestión de pagos priorizando la certeza de cobro frente a imprevistos y afirma que recomendaría ampliamente la herramienta a colegas jóvenes del gremio para modernizar y transparentar el rubro logístico.
+| 1 | Joaquin Rios | 26 años | La Molina | ![Foto](../assets/images/chapter2/entrevistas/segmento1-joaquin.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 2 | Juan David Haro Ramos | 21 años | Ate Vitarte| ![Foto](../assets/images/chapter2/entrevistas/segmento1-juan.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 3 | Ariana Escalante | 24 años | San Juan de Lurigancho | ![Foto](../assets/images/chapter2/entrevistas/segmento1-ariana.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
 
 **Segmento 2: Pequeños y Medianos Emprendedores**
 
 | # | Nombres y Apellidos | Edad | Distrito | Screenshot | URL del video (Microsoft Stream) | Inicio | Duración |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | [Nombre Apellido] | [Edad] | [Distrito] | *(captura del video)* | [URL privado] | [hh:mm:ss] | [mm:ss] |
-| 2 | [Nombre Apellido] | [Edad] | [Distrito] | *(captura del video)* | [URL privado] | [hh:mm:ss] | [mm:ss] |
-| 3 | [Nombre Apellido] | [Edad] | [Distrito] | *(captura del video)* | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 1 | Jannet Párraga | 48 años | Ate | ![Foto](../assets/images/chapter2/entrevistas/segmento2-jannet.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 2 | Almendra Lavi | 22 años | La Molina |  | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 3 | Camila Flores | 25 años | Surco |  | [URL privado] | [hh:mm:ss] | [mm:ss] |
 
-*Resumen de entrevista 1:*
+### 2.2.3. Análisis de entrevistas
+
+**Segmento 1: Transportistas de Carga Terrestre**
+
+*Resumen de entrevista 1:* Joaquín (26 años, Ate) es cogerente en una empresa familiar de transporte de abarrotes (flota de 3 camiones ligeros) con destino recurrente al mercado central Ramón Castilla. Al haber estudiado marketing, le preocupa reducir pérdidas y captar clientes. Es consumidor habitual de herramientas digitales móviles (Facebook, Instagram, WhatsApp). Sus fletes de regreso suelen estar vacíos y busca conectar con clientes cerca de La Molina para retornos. Está dispuesto a esperar hasta 30 minutos por carga, prefiere negociar sus propios precios y valora mucho la existencia de un sistema de calificación de usuarios.
+
+*Resumen de entrevista 2:* Juan David (21 años, Ate) es gestor logístico de una flota familiar (6 camiones). Usa principalmente el celular (WhatsApp, Google Maps) y ocasionalmente la PC. Entre 2-3 veces por semana sufren retornos vacíos, generando pérdidas. Su búsqueda actual es informal y le resulta frustrante. Muestra disposición inmediata a usar una app móvil para conseguir carga, estando dispuesto a esperar unos minutos extra. Considera indispensable negociar el pago directamente con el cliente y exige calificación de usuarios y monitoreo en tiempo real por seguridad. Usaría y recomendaría la herramienta si funciona bien y es confiable.
+
+*Resumen de entrevista 3:* Ariana (24 años, SJL) es transportista independiente de un furgón liviano. Gestiona sus operaciones exclusivamente mediante su celular (WhatsApp, redes sociales). Cerca del 50% de sus viajes de regreso son vacíos, absorbiendo su margen de ganancia. Su método actual mediante contactos informales le frustra por comisiones altas y desconfianza. Está muy dispuesta a usar una app móvil para sugerencias de carga y esperaría de 30-45 minutos en su punto de entrega. Considera indispensable un sistema de calificación de clientes y monitoreo en tiempo real. Es flexible en los pagos priorizando la certeza, y recomendaría la app a sus colegas.
+
+**Segmento 2: Pequeños y Medianos Emprendedores**
+
+*Resumen de entrevista 1:* Jannet (48 años, Ate) vende productos cosméticos y utiliza empresas de delivery para sus envíos, aunque cuenta con un contacto fidelizado. Su principal preocupación es la seguridad de la mercadería, por lo que demanda un sistema donde pueda reportar cualquier problema con el traslado. En ocasiones envía múltiples paquetes a la vez, requiriendo vehículos de mayor capacidad. Su mayor motivación para adoptar y recomendar una aplicación móvil es que le facilite el contacto directo con más compradores para sus productos.
 
 *Resumen de entrevista 2:*
 
