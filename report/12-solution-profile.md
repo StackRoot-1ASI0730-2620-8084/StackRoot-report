@@ -55,7 +55,7 @@ Los transportistas y empresarios de flotas en el departamento de Lima enfrentan 
 
 **Propuesta Tecnológica (Trazza)**
 
-Para hacer frente a esta problemática, NexusLibre presenta **Trazza**, una plataforma logística inteligente estructurada sobre una arquitectura en la nube (AWS). El sistema está desarrollado con un backend robusto en Java (Spring Boot) y un frontend web dinámico en TypeScript (Angular).
+Para hacer frente a esta problemática, StackRoot presenta **Trazza**, una plataforma logística inteligente estructurada sobre una arquitectura en la nube (AWS). El sistema está desarrollado con un backend robusto en Java (Spring Boot) y un frontend web dinámico en TypeScript (Angular).
 
 El núcleo logístico de Trazza se potencia mediante algoritmos computacionales de optimización (como Backtracking, Dijkstra, TSP y BFS) para evaluar capacidades de peso, trazar rutas eficientes y generar matrices de costos.
 

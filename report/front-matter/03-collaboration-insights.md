@@ -1,7 +1,7 @@
 ## Project Report Collaboration Insights
 
 **Repositorio del Project Report en GitHub:**  
-[NexusLibre Report - Commits en rama develop](https://github.com/NexusLibre-1ASI0729-2620-16692/upc-pre-202620-1asi0729-16692-NexusLibre-report)
+[StackRoot Report - Commits en rama develop](https://github.com/StackRoot-1ASI0730-2620-8084/upc-pre-202620-1asi0730-8084-StackRoot-report)
 
 ### Entrega 1 - AV1
 #### Versión 1.0 (06/09/2026) y Versión 1.1 (13/09/2026)

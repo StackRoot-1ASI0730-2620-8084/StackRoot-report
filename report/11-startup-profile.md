@@ -2,7 +2,8 @@
 ## 1.1. Startup Profile
 
 ### 1.1.1. Descripción de la Startup
-**NexusLibre** es una startup tecnológica emergente conformada por estudiantes de la carrera de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Nos enfocamos en diseñar, desarrollar y desplegar soluciones de software de código abierto (Open Source) escalables, accesibles y orientadas a servicios. Nuestro propósito es resolver problemáticas reales del sector logístico de cadena de suministro mediante productos digitales innovadores y sostenibles. Trabajamos bajo un entorno ágil y colaborativo, aplicando estándares de calidad de la industria para garantizar una comunicación efectiva y el cumplimiento de los objetivos técnicos y de negocio.
+
+**StackRoot** es una startup tecnológica impulsada por estudiantes de Ingeniería de Software de la Universidad Peruana de Ciencias Aplicadas (UPC). Nos especializamos en concebir, construir y lanzar aplicaciones web de código abierto que destacan por su escalabilidad, alto rendimiento y diseño accesible. Nuestro propósito es transformar la logística y la cadena de suministro a través de soluciones digitales sostenibles e innovadoras, aplicando metodologías ágiles y rigurosos estándares de la industria para asegurar entregas impactantes y de alta calidad.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
