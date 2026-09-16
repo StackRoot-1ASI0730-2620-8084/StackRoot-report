@@ -75,7 +75,7 @@ A continuación, se presentan las preguntas dirigidas a dueños de negocios pyme
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1 | Jannet Párraga | 48 años | Ate | ![Foto](../assets/images/chapter2/entrevistas/segmento2-jannet.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
 | 2 | Almendra Lavi | 22 años | La Molina |  | [URL privado] | [hh:mm:ss] | [mm:ss] |
-| 3 | Camila Flores | 25 años | Surco |  | [URL privado] | [hh:mm:ss] | [mm:ss] |
+| 3 | Camila Flores | 23 años | Surco | ![Foto](../assets/images/chapter2/entrevistas/segmento2-camila.jpeg) | [URL privado] | [hh:mm:ss] | [mm:ss] |
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -93,4 +93,4 @@ A continuación, se presentan las preguntas dirigidas a dueños de negocios pyme
 
 *Resumen de entrevista 2:*
 
-*Resumen de entrevista 3:*
+*Resumen de entrevista 3:* Camila (23 años, Surco) es una emprendedora dedicada a la venta de postres y pasteles. Vende entre 80 a 100 postres mensuales, casi exclusivamente dentro de Lima. Tiene un perfil altamente digital y utiliza WhatsApp, Instagram, Uber e InDrive frecuentemente. Prefiere que la aplicación seleccione automáticamente al conductor y prioriza el menor costo posible, mostrándose dispuesta a esperar más tiempo a cambio de una tarifa económica. Su principal problema actualmente es encontrar conductores responsables que cuiden su mercadería, ya que suele ser muy delicada.
