@@ -21,6 +21,7 @@ A continuación, se presentan los arquetipos de nuestros segmentos objetivos. La
 En esta sección se presenta el User Task Matrix, el cual concentra las tareas clave que los representantes de cada segmento (Transportistas y Emprendedores MYPE) realizan para cumplir sus objetivos logísticos. Estas tareas reflejan las actividades del mundo real que se ejecutan independientemente de nuestra futura solución de software.
 
 ![User Task Matrix comparando las tareas de transportistas y emprendedores](../assets/images/chapter2/needfinding/user-task-matrix.jpeg)
+> *Fuente: Elaboración propia en [Canva - User Task Matrix](https://canva.link/ublc7myvirh3hob)*
 
 **Análisis de tareas:**
 Al comparar ambos perfiles, observamos que las tareas con mayor frecuencia e importancia para el Emprendedor MYPE son la "Búsqueda de transportistas" y el "Monitoreo del envío", dado que de ello depende la satisfacción de su cliente final. Por su parte, para el Transportista, la "Búsqueda de carga de retorno" y la "Negociación de tarifas" son críticas, ya que impactan directamente en su rentabilidad. 
