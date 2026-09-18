@@ -16,13 +16,13 @@ A continuación se presenta el diagrama de clases correspondiente al Bounded Con
 A continuación explicamos de manera sencilla cómo leer este diagrama y qué significa cada color:
 
 **El significado de los colores:**
-* **Celeste (Interfaces):** Son como "contratos". Definen qué acciones se pueden hacer (como buscar o guardar), pero sin decir cómo. Esto ayuda a que el código esté más ordenado y sea fácil de actualizar.
-* **Amarillo (Aggregate Root):** Es la pieza principal y más importante. En este caso, el `Match` (Emparejamiento) es el líder que controla y agrupa a los demás elementos de esta sección.
-* **Verde (Entidades):** Son objetos vitales que guardan información y tienen acciones propias, como la `RutaRetorno` del transportista y la `SolicitudCarga` del emprendedor.
+* **Celeste (Interfaces):** definen que acciones se pueden hacer, pero sin decir cómo. Esto ayuda a que el código esté más ordenado y sea fácil de actualizar.
+* **Amarillo (Aggregate Root):** Es la pieza principal y mas importante. En este caso, el `Match` (Emparejamiento) es el líder que controla y agrupa a los demas elementos de esta sección.
+* **Verde (Entidades):** Son objetos vitales que guardan información y tienen acciones propias, como la `RutaRetorno` del transportista y la `SolicitudCarga` del emprendedor
 * **Gris claro (Clases operativas):** Son las piezas que hacen el trabajo pesado, como recibir las peticiones de los usuarios (`MatchController`), hacer los cálculos del sistema (`MatchService`) o comunicarse con la base de datos (`MatchRepository`).
 
 **El flujo del sistema (cómo trabajan en equipo):**
-* **El Controlador (`MatchController`):** Funciona como un recepcionista. Recibe la petición del usuario desde la web y se la entrega al Servicio. No hace cálculos ni guarda datos por sí mismo.
+* **El Controlador (`MatchController`):** Funciona como un recepcionista. Recibe la petición del usuario desde la web y se la entrega al Servicio. No hace cálculos ni guarda datos por sí mismo
 * **El Servicio (`MatchService`):** Es el "cerebro". Aquí ocurren los cálculos complejos, como evaluar matemáticamente si una carga cabe en el camión y si las rutas coinciden.
-* **El Repositorio (`MatchRepository`):** Es el bibliotecario. Es la única pieza del código que tiene permiso para ir a guardar o buscar la información definitiva en la base de datos.
+* **El Repositorio (`MatchRepository`):** Es el bibliotecario. Es la única pieza del código que tiene permiso para ir a guardar o buscar la información definitiva en la base de datos
 * **El Dominio (`Match`, `RutaRetorno`, `SolicitudCarga`):** Son objetos inteligentes. En lugar de ser solo cajas vacías que guardan texto, contienen sus propias reglas. Por ejemplo, la clase `RutaRetorno` tiene su propia función matemática para descontar el peso (`RestarCapacidad()`) de forma segura.
