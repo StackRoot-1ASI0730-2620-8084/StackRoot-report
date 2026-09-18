@@ -77,7 +77,6 @@ A continuación, se presentan las preguntas dirigidas a dueños de negocios pyme
 | 2 | Almendra Lavi | 21 años | La Victoria | ![Foto](../assets/images/chapter2/entrevistas/segmento2-almendra.jpeg) | [URL privado de Almendra](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210836_upc_edu_pe/IQBNIOPfQFteTauaqSpFRudwAVkZDD4gdqybcDFCt89VQ6c?e=N1IZTh&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MTc2Ni44fX0%3D) | 00:29:26 | 12:46 |
 | 3 | Camila Flores | 23 años | Surco | ![Foto](../assets/images/chapter2/entrevistas/segmento2-camila.jpeg) | [URL privado de Camila](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210836_upc_edu_pe/IQBNIOPfQFteTauaqSpFRudwAVkZDD4gdqybcDFCt89VQ6c?e=jdKGfQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6MjUzMy4xOX19) | 00:42:12 | 05:41 |
 
-### 2.2.3. Análisis de entrevistas
 
 **Segmento 1: Transportistas de Carga Terrestre**
 
@@ -94,3 +93,67 @@ A continuación, se presentan las preguntas dirigidas a dueños de negocios pyme
 *Resumen de entrevista 2:* Almendra (21 años, La Victoria) es cogerente en el negocio familiar dedicado a la venta y alquiler de equipo tecnológico. Actualmente está fidelizada a un transportista aliado para repartir sus productos. Para ella es fundamental poder visualizar en tiempo real la ruta de sus pedidos por seguridad. Estaría muy interesada en usar una aplicación (móvil y web) siempre que esta le ofrezca la opción de fidelizarse o guardar a sus transportistas de confianza. Valora primordialmente que el conductor ofrezca un trato amable a los clientes finales y que cumpla estrictamente con los tiempos de entrega.
 
 *Resumen de entrevista 3:* Camila (23 años, Surco) es una emprendedora dedicada a la venta de postres y pasteles. Vende entre 80 a 100 postres mensuales, casi exclusivamente dentro de Lima. Tiene un perfil altamente digital y utiliza WhatsApp, Instagram, Uber e InDrive frecuentemente. Prefiere que la aplicación seleccione automáticamente al conductor y prioriza el menor costo posible, mostrándose dispuesta a esperar más tiempo a cambio de una tarifa económica. Su principal problema actualmente es encontrar conductores responsables que cuiden su mercadería, ya que suele ser muy delicada.
+
+### 2.2.3. Análisis de entrevistas
+
+Este documento analiza las entrevistas realizadas a los dos segmentos objetivo del proyecto, con el fin de identificar las características objetivas y subjetivas más comunes que servirán de base para construir los arquetipos.
+ 
+- **Segmento 1:** Transportistas de carga terrestre (n = 3).
+- **Segmento 2:** Pequeños y medianos emprendedores (n = 3).
+ 
+## Segmento 1: Transportistas de carga terrestre
+ 
+Entrevistados: **E1** Joaquín (26, Ate, empresa familiar, 3 camiones), **E2** Juan David (21, Ate, flota familiar, 6 camiones), **E3** Ariana (24, SJL, independiente, furgón).
+ 
+| Característica | Tipo | Resultado | % | Fuente |
+|---|---|---|---|---|
+| Adultos jóvenes (21–26 años) de Lima Este | Objetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Sufren retornos vacíos (2–3 veces por semana o ~50 % de viajes) | Objetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Usan celular y WhatsApp | Objetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Negocio familiar | Objetiva | 2 de 3 | 66,7 % | E1, E2 |
+| Usan redes sociales | Objetiva | 2 de 3 | 66,7 % | E1, E3 |
+| Búsqueda actual de carga informal | Objetiva | 2 de 3 | 66,7 % | E2, E3 |
+| Motivación: reducir pérdidas | Subjetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Dispuestos a esperar por carga (30 min; unos minutos; 30–45 min) | Subjetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Calificación de usuarios indispensable o muy valorada | Subjetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Negociar el precio directamente | Subjetiva | 2 de 3 | 66,7 % | E1, E2 |
+| Monitoreo en tiempo real por seguridad | Subjetiva | 2 de 3 | 66,7 % | E2, E3 |
+| Frustración con el método actual | Subjetiva | 2 de 3 | 66,7 % | E2, E3 |
+| Disposición explícita a usar la app y recomendarla | Subjetiva | 2 de 3 | 66,7 % | E2, E3 |
+ 
+**Rasgos individuales (33,3 %):** comisiones altas y desconfianza (E3); captar clientes cerca de La Molina (E1); usa Google Maps (E2).
+ 
+**Perfil predominante:** adulto joven de Lima Este, móvil primero, con retornos vacíos como dolor principal. Está dispuesto a esperar hasta 30–45 min y adopta la herramienta si incluye **calificación de usuarios y monitoreo**.
+ 
+---
+ 
+## Segmento 2: Pequeños y medianos emprendedores
+ 
+Entrevistados: **E1** Jannet (48, Ate, cosméticos), **E2** Almendra (21, La Victoria, equipo tecnológico), **E3** Camila (23, Surco, postres).
+ 
+| Característica | Tipo | Resultado | % | Fuente |
+|---|---|---|---|---|
+| Ubicados en Lima | Objetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Edad ≤ 23 años (rango 21–48) | Objetiva | 2 de 3 | 66,7 % | E2, E3 |
+| Ya trabajan con un transportista de confianza | Objetiva | 2 de 3 | 66,7 % | E1, E2 |
+| Rubros distintos | Objetiva | 0 de 3 coinciden | 0 % | E1, E2, E3 |
+| Seguridad y cuidado de la mercadería como prioridad | Subjetiva | 3 de 3 | 100 % | E1, E2, E3 |
+| Preferencia por transportistas fidelizados | Subjetiva | 2 de 3 | 66,7 % | E1, E2 |
+ 
+**Rasgos individuales (33,3 %):** seguimiento en tiempo real y puntualidad (E2); reportar incidencias y acceder a más compradores (E1); menor costo, asignación automática y alto uso digital (E3).
+ 
+**Perfil predominante:** emprendedor de Lima cuya prioridad es que su mercadería llegue segura. Tiende a confiar en un transportista conocido. Hay **dos sub-perfiles**:
+- **A: control y confianza (E1, E2):** quiere elegir, guardar y monitorear a su transportista.
+- **B: costo y automatización (E3):** prioriza tarifa baja, asignación automática y acepta esperar más.
+---
+ 
+## Base para los arquetipos
+ 
+| | Transportista | Emprendedor |
+|---|---|---|
+| **Dolor** | Retorno vacío que genera pérdidas (100 %) | Riesgo para la mercadería (100 %) |
+| **Motivación** | Rentabilizar viajes de regreso | Seguridad y confiabilidad del traslado |
+| **Condición de adopción** | Calificación (100 %) y monitoreo (66,7 %) | Transportista confiable (66,7 %) |
+| **Comportamiento** | Móvil primero, negocia precio | Fidelizado, salvo sub-perfil B |
+ 
+**Conexión clave:** ambos segmentos piden **confianza y seguridad** (calificaciones, seguimiento, reporte de incidencias), lo que apunta a una propuesta de valor basada en reputación y trazabilidad.
