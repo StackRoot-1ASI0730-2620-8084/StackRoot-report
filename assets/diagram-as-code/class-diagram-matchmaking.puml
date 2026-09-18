@@ -5,7 +5,7 @@ skinparam DefaultFontName Arial
 skinparam DefaultFontSize 12
 skinparam linetype ortho
 
-' Colores por tipo de componente para mejorar la legibilidad
+' Colores por tipo de componente
 skinparam class {
     BackgroundColor<<Interface>> #E3F2FD
     BackgroundColor<<AggregateRoot>> #FFF9C4
@@ -23,20 +23,18 @@ skinparam package {
     BorderColor #BDBDBD
 }
 
-' Fuerzan al diagrama a estirarse horizontalmente
-skinparam nodesep 70
-skinparam ranksep 60
+' Aumentamos la separación para evitar que los textos choquen con las clases
+skinparam nodesep 150
+skinparam ranksep 90
 
 package "Trazza.API.MatchmakingContext" {
     
-    ' Capa de Presentación
     class MatchController {
         - _matchService: IMatchService
         + SuggestMatches(cargaId: int): ActionResult<List<MatchDto>>
         + AcceptMatch(matchId: int): ActionResult<bool>
     }
 
-    ' Capa de Lógica de Negocio
     interface IMatchService <<Interface>> {
         + FindMatchesForCarga(cargaId: int): List<Match>
         + ConfirmMatch(matchId: int): bool
@@ -50,7 +48,6 @@ package "Trazza.API.MatchmakingContext" {
         - CalculateCompatibility(ruta: RutaRetorno, carga: SolicitudCarga): float
     }
 
-    ' Capa de Acceso a Datos
     interface IMatchRepository <<Interface>> {
         + GetById(id: int): Match
         + GetAvailableRutas(): List<RutaRetorno>
@@ -64,7 +61,6 @@ package "Trazza.API.MatchmakingContext" {
         + Save(match: Match): void
     }
 
-    ' Capa de Dominio (Entidades y Agregados)
     class SolicitudCarga <<Entity>> {
         + Id: int
         + EmprendedorId: int
@@ -102,17 +98,17 @@ package "Trazza.API.MatchmakingContext" {
     }
 }
 
-' 1. JERARQUÍA HACIA ABAJO (DOWN)
+' 1. JERARQUÍA HACIA ABAJO
 MatchController .down.> IMatchService : usa
 MatchService .down.> IMatchRepository : usa
 MatchService .down.> Match : procesa
 MatchRepository .down.> Match : persiste
 
-' 2. IMPLEMENTACIONES HACIA LOS COSTADOS (LEFT) - Evita flechas hacia arriba
+' 2. IMPLEMENTACIONES HACIA LOS COSTADOS
 MatchService .left.|> IMatchService : implementa
 MatchRepository .left.|> IMatchRepository : implementa
 
-' 3. COMPOSICIÓN DEL DOMINIO EXPANDIDA HORIZONTALMENTE (LEFT, RIGHT, DOWN)
+' 3. COMPOSICIÓN DEL DOMINIO
 Match *-left-> SolicitudCarga : cubre
 Match *-right-> RutaRetorno : vincula
 Match *-down-> MatchStatus : tiene estado
