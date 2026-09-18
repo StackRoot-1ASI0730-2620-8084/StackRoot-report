@@ -21,11 +21,7 @@ En esta sección se especifican los aspectos principales del Sprint Planning Mee
 | **Sprint 1 – 1 Review Summary** | N/A (Al ser el primer Sprint del proyecto). |
 | **Sprint 1 – 1 Retrospective Summary** | N/A (Al ser el primer Sprint del proyecto). |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | Nuestro propósito es concebir y lanzar la versión inicial de la landing page para nuestro sistema de gestión de rutas, fundamentando su diseño en los hallazgos de las entrevistas realizadas a administradores y transportistas del sector logístico.
-
-Creemos que este entregable generará un impacto positivo y ofrecerá valor desde el primer contacto, transmitiendo con precisión la propuesta de valor del producto y la proyección estratégica de nuestra solución.
-
-Sabremos que hemos tenido éxito cuando los usuarios comprendan de manera intuitiva las ventajas clave de la plataforma y completen el formulario de contacto o soliciten más información de forma activa. |
+| **Sprint 1 Goal** | Nuestro propósito es concebir y lanzar la versión inicial de la landing page para nuestro sistema de gestión de rutas, fundamentando su diseño en los hallazgos de las entrevistas realizadas a administradores y transportistas del sector logístico.Creemos que este entregable generará un impacto positivo y ofrecerá valor desde el primer contacto, transmitiendo con precisión la propuesta de valor del producto y la proyección estratégica de nuestra solución.Sabremos que hemos tenido éxito cuando los usuarios comprendan de manera intuitiva las ventajas clave de la plataforma y completen el formulario de contacto o soliciten más información de forma activa.|
 | **Sprint 1 Velocity** | 5 Story Points. |
 | **Sum of Story Points** | 15 Story Points. |
 
