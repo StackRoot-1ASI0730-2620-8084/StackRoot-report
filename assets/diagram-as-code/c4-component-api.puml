@@ -1,0 +1,38 @@
+@startuml C4_Component_Trazza_API
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+title Diagrama de Componentes (Nivel 3) - API Application (Matchmaking Module)
+
+' CONTENEDORES Y SISTEMAS EXTERNOS
+Container(web_app, "Frontend Web Application", "Vue, JavaScript", "Interfaz de usuario (SPA).")
+ContainerDb(db, "Relational Database", "MySQL / PostgreSQL", "Persistencia de datos.")
+System_Ext(osrm, "OSRM / Motor de Grafos", "Cálculo de rutas y distancias espaciales.")
+
+Container_Boundary(api, "API Application (ASP.NET Core)") {
+    
+    Component(match_controller, "Matchmaking Controller", "C# REST Controller", "Expone los endpoints (/api/v1/matches) para buscar, sugerir y aceptar viajes.")
+    
+    Component(route_controller, "Route Controller", "C# REST Controller", "Expone endpoints (/api/v1/routes) para publicación de ofertas de retorno y demandas de carga.")
+    
+    Component(match_service, "Matchmaking Service", "C# Service Class", "Contiene la lógica de dominio: dispara la búsqueda de compatibilidad espacial y aplica políticas de emparejamiento.")
+    
+    Component(osrm_client, "OSRM Http Client", "C# HttpClient", "Encapsula la comunicación externa y parseo de respuestas con la API de OSRM.")
+    
+    Component(match_repo, "Match Repository", "Entity Framework Core", "Maneja el acceso a datos y mapeo objeto-relacional para las entidades Match, Oferta y Demanda.")
+}
+
+' RELACIONES
+Rel(web_app, match_controller, "Solicita sugerencias y confirma emparejamientos vía", "JSON/HTTPS")
+Rel(web_app, route_controller, "Publica rutas y fletes vía", "JSON/HTTPS")
+
+Rel(match_controller, match_service, "Delega intenciones de usuario a", "Inyección de dependencias")
+Rel(route_controller, match_service, "Delega registro de ofertas/demandas a", "Inyección de dependencias")
+
+Rel(match_service, osrm_client, "Solicita el cálculo de ruta óptima a", "Llamada síncrona")
+Rel(osrm_client, osrm, "Realiza petición externa vía", "JSON/HTTPS")
+
+Rel(match_service, match_repo, "Lee y guarda el estado del emparejamiento usando", "Llamada a métodos")
+Rel(match_repo, db, "Ejecuta comandos de persistencia en", "TCP/IP")
+
+@enduml

@@ -1,0 +1,41 @@
+@startuml C4_Component_Trazza_Frontend
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+LAYOUT_WITH_LEGEND()
+title Diagrama de Componentes (Nivel 3) - Frontend Web Application (Vue)
+
+' ACTORES EXTERNOS
+Person(usuario, "Usuario (Transportista / MYPE)", "Interactúa con las vistas de la plataforma.")
+
+' CONTENEDORES EXTERNOS
+Container(api, "API Application", "C#, ASP.NET Core", "Backend RESTful API.")
+System_Ext(mqtt, "Broker MQTT", "Ingesta de telemetría GPS.")
+
+Container_Boundary(web_app, "Frontend Web Application (Vue)") {
+    
+    Component(router, "Vue Router", "Vue.js", "Gestiona la navegación entre vistas y protege las rutas privadas (Navigation Guards).")
+    
+    Component(views, "Vistas y Pantallas", "Vue Components / PrimeVue", "Páginas principales (Dashboard, Búsqueda de Rutas, Publicación de Carga, Monitoreo).")
+    
+    Component(store, "State Management", "Pinia", "Almacena el estado global de la aplicación (sesión del usuario, tokens, datos temporales del viaje).")
+    
+    Component(api_client, "API Service", "Axios (JavaScript)", "Intercepta peticiones, inyecta el token JWT y maneja las llamadas HTTP hacia el backend.")
+    
+    Component(mqtt_client, "Telemetría Client", "MQTT.js / WebSockets", "Mantiene la conexión en tiempo real para renderizar la ubicación del camión en el mapa.")
+}
+
+' RELACIONES
+Rel(usuario, router, "Navega a través de la URL", "HTTPS")
+Rel(usuario, views, "Interactúa con la interfaz (clicks, formularios)")
+
+Rel(router, views, "Carga dinámicamente el componente según la ruta")
+Rel(views, store, "Lee y actualiza el estado global")
+Rel(views, api_client, "Solicita operaciones de lectura/escritura")
+Rel(views, mqtt_client, "Se suscribe a eventos del mapa")
+
+Rel(store, api_client, "Delega las llamadas de red para sincronizar datos")
+
+Rel(api_client, api, "Ejecuta peticiones a los endpoints REST", "JSON/HTTPS")
+Rel(mqtt_client, mqtt, "Recibe coordenadas en tiempo real", "WSS")
+
+@enduml
