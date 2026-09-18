@@ -13,9 +13,16 @@ A continuación se presenta el diagrama de clases correspondiente al Bounded Con
 
 ![Diagrama de Clases - Matchmaking](../assets/images/chapter4/software-object-oriented-design/class-diagram-matchmaking.png)
 
-A continuación se detalla la estructura y flujo del diagrama:
+A continuación explicamos de manera sencilla cómo leer este diagrama y qué significa cada color:
 
-* **Controladores (`MatchController`):** Representa la puerta de entrada de las peticiones HTTP (REST). No accede directamente a la base de datos, sino que delega el trabajo a través de la interfaz `IMatchService`, logrando un bajo acoplamiento en el sistema.
-* **Lógica de negocio y servicios (`MatchService`):** Es el componente encargado de las operaciones del dominio. Implementa la lógica para emparejar cargas con rutas disponibles, evaluar la compatibilidad de trayectos y validar la confirmación de acuerdos.
-* **Acceso a datos y repositorios (`MatchRepository`):** Es la capa responsable de comunicarse con la base de datos mediante Entity Framework Core (`AppDbContext`), permitiendo consultar y persistir el estado de los viajes y acuerdos.
-* **Entidades y Agregados de Dominio (`Match`, `RutaRetorno`, `SolicitudCarga`):** Modelan los elementos centrales del negocio. Cuentan con lógica y comportamiento propio (como `ConfirmarAcuerdo()` o `RestarCapacidad()`), protegiendo sus datos y asegurando que las reglas del negocio se cumplan siempre.
+**El significado de los colores:**
+* **Celeste (Interfaces):** Son como "contratos". Definen qué acciones se pueden hacer (como buscar o guardar), pero sin decir cómo. Esto ayuda a que el código esté más ordenado y sea fácil de actualizar.
+* **Amarillo (Aggregate Root):** Es la pieza principal y más importante. En este caso, el `Match` (Emparejamiento) es el líder que controla y agrupa a los demás elementos de esta sección.
+* **Verde (Entidades):** Son objetos vitales que guardan información y tienen acciones propias, como la `RutaRetorno` del transportista y la `SolicitudCarga` del emprendedor.
+* **Gris claro (Clases operativas):** Son las piezas que hacen el trabajo pesado, como recibir las peticiones de los usuarios (`MatchController`), hacer los cálculos del sistema (`MatchService`) o comunicarse con la base de datos (`MatchRepository`).
+
+**El flujo del sistema (cómo trabajan en equipo):**
+* **El Controlador (`MatchController`):** Funciona como un recepcionista. Recibe la petición del usuario desde la web y se la entrega al Servicio. No hace cálculos ni guarda datos por sí mismo.
+* **El Servicio (`MatchService`):** Es el "cerebro". Aquí ocurren los cálculos complejos, como evaluar matemáticamente si una carga cabe en el camión y si las rutas coinciden.
+* **El Repositorio (`MatchRepository`):** Es el bibliotecario. Es la única pieza del código que tiene permiso para ir a guardar o buscar la información definitiva en la base de datos.
+* **El Dominio (`Match`, `RutaRetorno`, `SolicitudCarga`):** Son objetos inteligentes. En lugar de ser solo cajas vacías que guardan texto, contienen sus propias reglas. Por ejemplo, la clase `RutaRetorno` tiene su propia función matemática para descontar el peso (`RestarCapacidad()`) de forma segura.
