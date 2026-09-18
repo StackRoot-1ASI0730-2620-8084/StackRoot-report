@@ -7,13 +7,7 @@ skinparam nodesep 70
 skinparam ranksep 60
 skinparam defaultFontName Arial
 skinparam defaultFontSize 12
-
-skinparam class {
-    BackgroundColor #F9FBE7
-    BorderColor #9E9E9E
-    ArrowColor #424242
-    HeaderBackgroundColor #E8F5E9
-}
+skinparam style strictuml
 
 entity "USUARIO" as usuario {
   * id : uuid <<PK>>
