@@ -1,97 +1,119 @@
 @startuml ClassDiagram_Matchmaking
-left to right direction
+skinparam style strictuml
+skinparam classAttributeIconSize 0
+skinparam DefaultFontName Arial
+skinparam DefaultFontSize 12
+skinparam linetype ortho
+skinparam nodesep 60
+skinparam ranksep 60
+top to bottom direction
 
-class Usuario {
-    +UUID id
-    +String email
-    +String passwordHash
-    +String rol
-    +String estadoCuenta
+' Colores por tipo de componente para mejorar la legibilidad
+skinparam class {
+    BackgroundColor<<Interface>> #E3F2FD
+    BackgroundColor<<AggregateRoot>> #FFF9C4
+    BackgroundColor<<Entity>> #E8F5E9
+    BackgroundColor #FAFAFA
+    BorderColor #9E9E9E
+    ArrowColor #424242
+}
+skinparam enum {
+    BackgroundColor #F3E5F5
+    BorderColor #9E9E9E
+}
+skinparam package {
+    BackgroundColor #FFFFFF
+    BorderColor #BDBDBD
 }
 
-class PerfilTransportista {
-    +UUID id
-    +String dni
-    +String nombres
-    +String telefono
-    +String estadoVerificacion
+package "Trazza.API.MatchmakingContext" {
+    
+    ' Capa de Controladores (Presentación API)
+    class MatchController {
+        - _matchService: IMatchService
+        + SuggestMatches(cargaId: int): ActionResult<List<MatchDto>>
+        + AcceptMatch(matchId: int): ActionResult<bool>
+    }
+
+    ' Capa de Lógica de Negocio (Interfaces y Servicios)
+    interface IMatchService <<Interface>> {
+        + FindMatchesForCarga(cargaId: int): List<Match>
+        + ConfirmMatch(matchId: int): bool
+    }
+
+    class MatchService {
+        - _matchRepo: IMatchRepository
+        - _osrmClient: IOsrmClient
+        + FindMatchesForCarga(cargaId: int): List<Match>
+        + ConfirmMatch(matchId: int): bool
+        - CalculateCompatibility(ruta: RutaRetorno, carga: SolicitudCarga): float
+    }
+
+    ' Capa de Acceso a Datos (Interfaces y Repositorios)
+    interface IMatchRepository <<Interface>> {
+        + GetById(id: int): Match
+        + GetAvailableRutas(): List<RutaRetorno>
+        + Save(match: Match): void
+    }
+
+    class MatchRepository {
+        - _dbContext: AppDbContext
+        + GetById(id: int): Match
+        + GetAvailableRutas(): List<RutaRetorno>
+        + Save(match: Match): void
+    }
+
+    ' Capa de Dominio (Entidades y Agregados)
+    class Match <<AggregateRoot>> {
+        + Id: int
+        + RutaId: int
+        + CargaId: int
+        + Status: MatchStatus
+        + TarifaAcordada: decimal
+        + ConfirmarAcuerdo(): void
+        + CancelarAcuerdo(): void
+    }
+
+    class RutaRetorno <<Entity>> {
+        + Id: int
+        + TransportistaId: int
+        + OrigenLatLon: string
+        + DestinoLatLon: string
+        + CapacidadDisponible: float
+        + FechaSalida: DateTime
+        + RestarCapacidad(peso: float): void
+    }
+
+    class SolicitudCarga <<Entity>> {
+        + Id: int
+        + EmprendedorId: int
+        + OrigenLatLon: string
+        + DestinoLatLon: string
+        + PesoRequerido: float
+        + IsAssigned: bool
+        + MarcarComoAsignada(): void
+    }
+    
+    enum MatchStatus {
+        PENDING
+        ACCEPTED
+        REJECTED
+    }
 }
 
-class PerfilEmprendedor {
-    +UUID id
-    +String razonSocial
-    +String ruc
-    +String direccionComercial
-}
+' Relaciones de Inyección de dependencias e Implementación
+MatchController ..> IMatchService : usa
+IMatchService <|.. MatchService : implementa
+MatchService ..> IMatchRepository : usa
+IMatchRepository <|.. MatchRepository : implementa
 
-class Vehiculo {
-    +UUID id
-    +String placa
-    +String tipoCarroceria
-    +Float capacidadCargaKg
-}
+' Relaciones de uso con Entidades de Dominio
+MatchService ..> Match : procesa
+MatchRepository ..> Match : persiste
 
-class RutaRetorno {
-    +UUID id
-    +String origen
-    +String destino
-    +DateTime fechaSalida
-    +Float capacidadDisponibleKg
-    +String estado
-}
+' Composiciones del Agregado
+Match *-- RutaRetorno : vincula >
+Match *-- SolicitudCarga : cubre >
+Match *-right- MatchStatus : tiene estado >
 
-class SolicitudEnvio {
-    +UUID id
-    +String origen
-    +String destino
-    +Float pesoKg
-    +String estado
-}
-
-class PropuestaMatch {
-    +UUID id
-    +Float montoOfrecido
-    +Float tarifaAcordada
-    +String estado
-}
-
-class ViajeLogistico {
-    +UUID id
-    +DateTime fechaRecojoReal
-    +DateTime fechaEntrega
-    +String estadoViaje
-}
-
-class Incidencia {
-    +UUID id
-    +String tipoIncidencia
-    +String descripcion
-    +Boolean atendida
-}
-
-class TransaccionPago {
-    +UUID id
-    +Float montoTotal
-    +Float comisionPlataforma
-    +String estadoPago
-}
-
-class Calificacion {
-    +UUID id
-    +Int puntuacion
-    +String comentario
-}
-
-Usuario "1" --> "0..1" PerfilTransportista : tiene
-Usuario "1" --> "0..1" PerfilEmprendedor : tiene
-PerfilTransportista "1" --> "1..*" Vehiculo : registra
-PerfilTransportista "1" --> "0..*" RutaRetorno : publica
-Vehiculo "1" --> "0..*" RutaRetorno : asignado a
-PerfilEmprendedor "1" --> "0..*" SolicitudEnvio : solicita
-SolicitudEnvio "1" --> "0..*" PropuestaMatch : recibe
-RutaRetorno "1" --> "0..*" PropuestaMatch : genera
-PropuestaMatch "1" --> "1" ViajeLogistico : se convierte en
-ViajeLogistico "1" *-- "0..*" Incidencia : registra
-ViajeLogistico "1" --> "1" TransaccionPago : genera
-ViajeLogistico "1" --> "0..2" Calificacion : recibe
 @enduml
