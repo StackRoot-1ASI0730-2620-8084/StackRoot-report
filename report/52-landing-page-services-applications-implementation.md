@@ -13,7 +13,7 @@ En esta sección se especifican los aspectos principales del Sprint Planning Mee
 | Sprint # | Sprint 1 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| **Date** | 2026-09-01 |
+| **Date** | 2026-09-18 |
 | **Time** | 10:00 AM |
 | **Location** | Reunión virtual vía Microsoft Teams |
 | **Prepared By** | Peñaranda, Gabriel |
@@ -21,9 +21,13 @@ En esta sección se especifican los aspectos principales del Sprint Planning Mee
 | **Sprint 1 – 1 Review Summary** | N/A (Al ser el primer Sprint del proyecto). |
 | **Sprint 1 – 1 Retrospective Summary** | N/A (Al ser el primer Sprint del proyecto). |
 | **Sprint Goal & User Stories** | |
-| **Sprint 1 Goal** | "Our focus is on offering an informative entry point and basic authentication flow to new platform users. We believe it delivers confidence in the product to independent drivers and SMB owners. This will be confirmed when visitors can navigate the Landing Page and successfully complete the registration process in the Frontend." |
-| **Sprint 1 Velocity** | 30 Story Points. |
-| **Sum of Story Points** | 28 Story Points. |
+| **Sprint 1 Goal** | Nuestro propósito es concebir y lanzar la versión inicial de la landing page para nuestro sistema de gestión de rutas, fundamentando su diseño en los hallazgos de las entrevistas realizadas a administradores y transportistas del sector logístico.
+
+Creemos que este entregable generará un impacto positivo y ofrecerá valor desde el primer contacto, transmitiendo con precisión la propuesta de valor del producto y la proyección estratégica de nuestra solución.
+
+Sabremos que hemos tenido éxito cuando los usuarios comprendan de manera intuitiva las ventajas clave de la plataforma y completen el formulario de contacto o soliciten más información de forma activa. |
+| **Sprint 1 Velocity** | 5 Story Points. |
+| **Sum of Story Points** | 15 Story Points. |
 
 ### 5.2.1.2. Aspect Leaders and Collaborators
 
