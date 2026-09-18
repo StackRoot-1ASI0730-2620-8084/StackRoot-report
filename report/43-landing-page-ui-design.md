@@ -1,6 +1,6 @@
 ## 4.3. Landing Page UI Design.
 
-En esta sección se presenta la propuesta de diseño de interfaz de usuario para el landing page de Trazza en su versión desktop. El objetivo es materializar las decisiones de arquitectura de la información y los lineamientos visuales en una experiencia digital clara, estructurada y orientada a resolver la problemática de los fletes vacíos en Lima Metropolitana.
+En esta sección se presenta la propuesta de diseño de interfaz de usuario para el landing page de Trazza en sus versiones desktop y mobile. El objetivo es materializar las decisiones de arquitectura de la información y los lineamientos visuales en una experiencia digital clara, estructurada y orientada a resolver la problemática de los fletes vacíos en Lima Metropolitana.
 
 A través de este diseño, se busca captar la atención de nuestros segmentos objetivo y guiarlos de manera progresiva desde el primer impacto visual hasta la conversión final, asegurando una interacción intuitiva en cada etapa del recorrido.
 
@@ -22,6 +22,8 @@ El diseño esquemático de la versión de escritorio está estructurado para gui
 
 A medida que el usuario baja en la página, encuentra la sección de funcionamiento en tres pasos detallados, seguida de la arquitectura de beneficios donde se exponen los pilares del servicio como el motor de IA y el monitoreo por GPS. Más abajo, se incluye una tabla comparativa frente a los métodos tradicionales e informales, las tarjetas con casos de éxito de usuarios reales en Lima y el bloque de impacto ambiental. Finalmente, la página cierra con un bloque de conversión directa y un pie de página corporativo que reúne los enlaces legales, de soporte y contacto.
 
+---
+
 ### 4.3.2. Landing Page Mock-up.
 
 **Explicación para Desktop**
@@ -40,3 +42,17 @@ A medida que el usuario baja en la página, encuentra la sección de funcionamie
 El diseño visual de la landing page aplica los lineamientos del Design System de Trazza, utilizando la paleta de colores corporativa y una tipografía limpia y legible. La interfaz inicia con el bloque principal que integra un panel interactivo de rastreo en tiempo real, acompañado de los accesos rápidos y métricas de confianza que respaldan la propuesta de valor de la plataforma.
 
 En las siguientes secciones se muestran de forma visual el flujo operativo en tres pasos, la parrilla de ventajas competitivas, la tabla comparativa de mercado con sus respectivos contrastes y las opiniones de transportistas y emprendedores. El recorrido finaliza con la sección de impacto ambiental, un bloque con la demostración en video del motor de emparejamiento y el pie de página institucional, asegurando una experiencia profesional y orientada por completo a la conversión.
+
+**Explicación para Mobile**
+
+<div align="center">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-hero.png" alt="hero mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-workflow.png" alt="workflow mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-benefits.png" alt="benefits mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-benchmark.png" alt="benchmark mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-testimonials.png" alt="testimonials mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-video.png" alt="video mobile" width="350">
+  <img src="../assets/images/chapter4/landing-page-ui-design/landing-mockup-mob-footer.png" alt="footer mobile" width="350">
+</div>
+
+La adaptación móvil de los mockups reorganiza la estructura en una interfaz fluida a una sola columna, priorizando elementos táctiles de fácil acceso, menús desplegables optimizados y tarjetas compactas que garantizan una lectura ágil para transportistas y emprendedores directamente desde sus smartphones.
