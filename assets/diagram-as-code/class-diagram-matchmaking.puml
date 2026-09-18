@@ -4,9 +4,6 @@ skinparam classAttributeIconSize 0
 skinparam DefaultFontName Arial
 skinparam DefaultFontSize 12
 skinparam linetype ortho
-skinparam nodesep 60
-skinparam ranksep 60
-top to bottom direction
 
 ' Colores por tipo de componente para mejorar la legibilidad
 skinparam class {
@@ -26,16 +23,20 @@ skinparam package {
     BorderColor #BDBDBD
 }
 
+' Fuerzan al diagrama a estirarse horizontalmente
+skinparam nodesep 70
+skinparam ranksep 60
+
 package "Trazza.API.MatchmakingContext" {
     
-    ' Capa de Controladores (Presentación API)
+    ' Capa de Presentación
     class MatchController {
         - _matchService: IMatchService
         + SuggestMatches(cargaId: int): ActionResult<List<MatchDto>>
         + AcceptMatch(matchId: int): ActionResult<bool>
     }
 
-    ' Capa de Lógica de Negocio (Interfaces y Servicios)
+    ' Capa de Lógica de Negocio
     interface IMatchService <<Interface>> {
         + FindMatchesForCarga(cargaId: int): List<Match>
         + ConfirmMatch(matchId: int): bool
@@ -49,7 +50,7 @@ package "Trazza.API.MatchmakingContext" {
         - CalculateCompatibility(ruta: RutaRetorno, carga: SolicitudCarga): float
     }
 
-    ' Capa de Acceso a Datos (Interfaces y Repositorios)
+    ' Capa de Acceso a Datos
     interface IMatchRepository <<Interface>> {
         + GetById(id: int): Match
         + GetAvailableRutas(): List<RutaRetorno>
@@ -64,6 +65,16 @@ package "Trazza.API.MatchmakingContext" {
     }
 
     ' Capa de Dominio (Entidades y Agregados)
+    class SolicitudCarga <<Entity>> {
+        + Id: int
+        + EmprendedorId: int
+        + OrigenLatLon: string
+        + DestinoLatLon: string
+        + PesoRequerido: float
+        + IsAssigned: bool
+        + MarcarComoAsignada(): void
+    }
+
     class Match <<AggregateRoot>> {
         + Id: int
         + RutaId: int
@@ -83,16 +94,6 @@ package "Trazza.API.MatchmakingContext" {
         + FechaSalida: DateTime
         + RestarCapacidad(peso: float): void
     }
-
-    class SolicitudCarga <<Entity>> {
-        + Id: int
-        + EmprendedorId: int
-        + OrigenLatLon: string
-        + DestinoLatLon: string
-        + PesoRequerido: float
-        + IsAssigned: bool
-        + MarcarComoAsignada(): void
-    }
     
     enum MatchStatus {
         PENDING
@@ -101,19 +102,19 @@ package "Trazza.API.MatchmakingContext" {
     }
 }
 
-' Relaciones de Inyección de dependencias e Implementación
-MatchController ..> IMatchService : usa
-IMatchService <|.. MatchService : implementa
-MatchService ..> IMatchRepository : usa
-IMatchRepository <|.. MatchRepository : implementa
+' 1. JERARQUÍA HACIA ABAJO (DOWN)
+MatchController .down.> IMatchService : usa
+MatchService .down.> IMatchRepository : usa
+MatchService .down.> Match : procesa
+MatchRepository .down.> Match : persiste
 
-' Relaciones de uso con Entidades de Dominio
-MatchService ..> Match : procesa
-MatchRepository ..> Match : persiste
+' 2. IMPLEMENTACIONES HACIA LOS COSTADOS (LEFT) - Evita flechas hacia arriba
+MatchService .left.|> IMatchService : implementa
+MatchRepository .left.|> IMatchRepository : implementa
 
-' Composiciones del Agregado
-Match *-- RutaRetorno : vincula >
-Match *-- SolicitudCarga : cubre >
-Match *-right- MatchStatus : tiene estado >
+' 3. COMPOSICIÓN DEL DOMINIO EXPANDIDA HORIZONTALMENTE (LEFT, RIGHT, DOWN)
+Match *-left-> SolicitudCarga : cubre
+Match *-right-> RutaRetorno : vincula
+Match *-down-> MatchStatus : tiene estado
 
 @enduml
