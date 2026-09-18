@@ -15,9 +15,6 @@ A continuación, se listan progresivamente los enlaces a las exposiciones corres
 | Hito | Título del Video | Enlace Microsoft Stream |
 | :--- | :--- | :--- |
 | **AV1** | Exposición Sprint Review AV1 | [URL pendiente de Stream/Clipchamp] |
-| **TB1** | Exposición Stage Review TB1 | [URL pendiente de Stream/Clipchamp] |
-| **AV2** | Exposición Sprint Review AV2 | [URL pendiente de Stream/Clipchamp] |
-| **TB2** | Exposición Release Review TB2 | [URL pendiente de Stream/Clipchamp] |
 
 ## Anexo D. Formato para Evaluación de User Experience según Heurísticas
 
