@@ -20,37 +20,7 @@ El branding de Trazza busca establecer una conexión de confianza con usuarios q
 
 Los colores seleccionados reflejan nuestra misión tecnológica: el azul profundo transmite seguridad corporativa y solidez, el verde indica confirmación (viajes completados, rutas óptimas), y los tonos oscuros garantizan una correcta legibilidad en cabinas de camiones (sometidas a luz solar intensa o a viajes nocturnos).
 
-<div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <div style="background-color: #131B2E; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#131B2E</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #0037B0; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#0037B0</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #2151DA; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#2151DA</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #006C4A; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#006C4A</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #F59E0B; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#F59E0B</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #747686; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#747686</span>
-  </div>
-  <div style="text-align: center;">
-    <div style="background-color: #F2F3FF; width: 65px; height: 65px; border-radius: 8px; border: 1px solid #ccc; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"></div>
-    <span style="font-size: 13px; font-family: monospace; color: #434655; font-weight: 600;">#F2F3FF</span>
-  </div>
-</div>
-
+![Foto](../assets/images/ColorPalet-Trazza.png)
 - **Primary Colors (Azules y Oscuros):** `#131B2E`, `#434655`, `#0037B0`. Utilizados para la identidad core, menús de navegación, textos principales (evitando el negro absoluto puro) y acciones primarias.
 - **Secondary & Accent (Verdes y Naranjas):** `#006C4A`, `#85F8C4` (Éxito, tarifas aceptadas y rutas sin desviaciones), `#F59E0B` (Alertas IoT, espera de carga y desvíos de más de 2km).
 - **Backgrounds & Neutrals:** `#FFFFFF`, `#F2F3FF`, `#EAEDFF`, `#747686`. Fondos limpios para separar las zonas del mapa de los paneles de administración y formularios de solicitudes.
