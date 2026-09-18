@@ -1,0 +1,33 @@
+@startuml C4_Context_Trazza
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Configuración visual opcional para que se vea más limpio
+LAYOUT_WITH_LEGEND()
+title Diagrama de Contexto (Nivel 1) - Trazza Platform
+
+' ACTORES (Person)
+Person(transportista, "Transportista", "Conductor de carga terrestre que busca rentabilizar el espacio vacío en sus rutas de retorno.")
+Person(emprendedor, "Emprendedor (MYPE)", "Dueño de negocio que necesita enviar mercadería a nivel interprovincial de forma segura y económica.")
+
+' SISTEMA CENTRAL (System)
+System(trazza, "Trazza Platform", "Plataforma SaaS logística que empareja fletes con rutas de retorno, monitorea viajes en tiempo real y gestiona cobros.")
+
+' SISTEMAS EXTERNOS (System_Ext)
+System_Ext(reniec, "Servicio RENIEC", "API gubernamental para la validación de identidad y contraste del DNI.")
+System_Ext(osrm, "OSRM / Motor de Grafos", "Motor de enrutamiento para calcular distancias espaciales y trazar rutas óptimas.")
+System_Ext(mqtt, "Broker MQTT", "Infraestructura de mensajería IoT para la ingesta de coordenadas telemétricas GPS.")
+System_Ext(pasarela, "Pasarela de Pagos", "Procesa los cobros con tarjeta, retenciones de comisión y liberaciones de fondos.")
+System_Ext(facturador, "Facturador API", "Servicio de emisión y validación de comprobantes de pago electrónicos ante SUNAT.")
+
+' RELACIONES (Rel)
+' Actores -> Sistema Central
+Rel(transportista, trazza, "Registra vehículos, publica disponibilidad de rutas, reporta ubicación y confirma entregas en", "HTTPS")
+Rel(emprendedor, trazza, "Publica solicitudes de carga, monitorea el mapa en vivo, califica y realiza pagos en", "HTTPS")
+
+' Sistema Central -> Sistemas Externos
+Rel(trazza, reniec, "Verifica el DNI durante el onboarding KYC mediante", "JSON/REST")
+Rel(trazza, osrm, "Solicita cálculo de compatibilidad de rutas y kilometraje a", "JSON/REST")
+Rel(trazza, mqtt, "Publica y se suscribe a eventos de geolocalización continua usando", "MQTT/WSS")
+Rel(trazza, pasarela, "Deriva el procesamiento de la transacción y retención de lucro cesante a", "JSON/REST")
+Rel(trazza, facturador, "Solicita la generación de la boleta/factura por comisión a", "JSON/REST")
+@enduml

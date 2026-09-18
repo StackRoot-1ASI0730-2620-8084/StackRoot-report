@@ -1,0 +1,47 @@
+@startuml C4_Container_Trazza
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_WITH_LEGEND()
+title Diagrama de Contenedores (Nivel 2) - Trazza Platform (Stack Web)
+
+' ACTORES
+Person(transportista, "Transportista", "Conductor que busca rentabilizar el espacio vacío en sus rutas de retorno.")
+Person(emprendedor, "Emprendedor (MYPE)", "Dueño de negocio que necesita enviar mercadería.")
+
+' SISTEMAS EXTERNOS
+System_Ext(reniec, "Servicio RENIEC", "Validación de identidad (KYC).")
+System_Ext(osrm, "OSRM / Motor de Grafos", "Cálculo de rutas y distancias.")
+System_Ext(mqtt, "Broker MQTT", "Ingesta de telemetría GPS.")
+System_Ext(pasarela, "Pasarela de Pagos", "Procesamiento de transacciones.")
+System_Ext(facturador, "Facturador API", "Emisión de comprobantes electrónicos.")
+
+' LÍMITE DEL SISTEMA
+System_Boundary(trazza_platform, "Trazza Platform") {
+    
+    Container(landing, "Landing Page", "HTML5, CSS3, JavaScript", "Página estática de marketing, conversión y redirección hacia la aplicación principal.")
+    
+    Container(web_app, "Frontend Web Application", "Vue, JavaScript, PrimeVue", "Single Page Application (SPA) que provee la interfaz para publicar rutas, fletes, monitorear en vivo y pagos.")
+    
+    Container(api, "API Application", "C#, ASP.NET Core", "Provee los servicios web vía RESTful API. Orquesta la lógica de negocio, emparejamiento, seguridad y transacciones.")
+    
+    ContainerDb(db, "Relational Database", "MySQL / PostgreSQL", "Almacena datos transaccionales: usuarios, perfiles, viajes, matches y pagos.")
+}
+
+' RELACIONES
+Rel(transportista, landing, "Visita para conocer la propuesta", "HTTPS")
+Rel(emprendedor, landing, "Visita para conocer la propuesta", "HTTPS")
+
+Rel(transportista, web_app, "Interactúa con la plataforma mediante", "HTTPS")
+Rel(emprendedor, web_app, "Interactúa con la plataforma mediante", "HTTPS")
+
+Rel(web_app, api, "Consume endpoints y envía datos vía", "JSON/HTTPS")
+Rel(api, db, "Lee y escribe información utilizando", "Entity Framework Core / TCP")
+
+Rel(api, reniec, "Valida DNI en el onboarding mediante", "JSON/REST")
+Rel(api, osrm, "Consulta algoritmos de enrutamiento a", "JSON/REST")
+Rel(api, mqtt, "Publica/Suscribe coordenadas en", "MQTT")
+Rel(api, pasarela, "Procesa pagos y retiene comisiones mediante", "JSON/REST")
+Rel(api, facturador, "Solicita emisión de comprobantes a", "JSON/REST")
+
+Rel(web_app, mqtt, "Se suscribe para actualización de mapa en vivo vía", "WSS (WebSockets)")
+@enduml
