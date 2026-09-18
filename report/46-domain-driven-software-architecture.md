@@ -48,4 +48,14 @@ Haciendo un acercamiento, el **Diagrama de Contenedores** (Nivel 2) detalla las 
 
 ## 4.6.4. Software Architecture Components Diagrams
 
-Profundizando aún más, el **Diagrama de Componentes** (Nivel 3) hace un "zoom" dentro del contenedor API Application, enfocándose en el Bounded Context principal de Trazza: Matchmaking & Routing. Este diagrama demuestra cómo la arquitectura orientada a dominios se refleja en el código backend en C#.
+A continuación se detalla la arquitectura interna de los dos contenedores principales de la plataforma Trazza, ilustrando cómo las responsabilidades se distribuyen a nivel de código fuente.
+
+### 4.6.4.1. Frontend Web Application Components
+
+![C4 Component Diagram Frontend](../assets/images/chapter4/domain-drive-architecture/c4-component-frontend.png)
+
+### 4.6.4.2. API Application Components (Matchmaking Core)
+
+![C4 Component Diagram API](../assets/images/chapter4/domain-drive-architecture/c4-component-api.png)
+
+- *Nota:* El contenedor Landing Page no fue detallado a nivel de componentes debido a su naturaleza estática (HTML/CSS/JS) sin lógica de negocio compleja.
