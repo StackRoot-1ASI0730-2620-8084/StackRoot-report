@@ -24,7 +24,6 @@ El equipo utiliza **GitHub** como plataforma centralizada para el alojamiento y 
 * **Informe del Proyecto:** [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-report)
 * **Landing Page Repository:** [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-LandingPage](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-LandingPage)
 * **Frontend Web Application Repository:** [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-WebAplication](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-WebAplication)
-* **Web Services (API) Repository:** [https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-API](https://github.com/StackRoot-1ASI0730-2620-8084/Trazza-API) *(Nota: URL referencial, ajustar si el nombre del repo backend varía)*
 
 **Flujo de Trabajo: GitFlow Workflow**
 
