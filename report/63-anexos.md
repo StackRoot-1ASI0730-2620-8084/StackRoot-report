@@ -14,7 +14,7 @@ A continuación, se listan progresivamente los enlaces a las exposiciones corres
 
 | Hito | Título del Video | Enlace Microsoft Stream |
 | :--- | :--- | :--- |
-| **AV1** | Exposición Sprint Review AV1 | [URL pendiente de Stream/Clipchamp] |
+| **AV1** | Exposición Sprint Review AV1 | [upc-pre-202620-1asi0730-8084-StackRoot-keynote-av1.mp4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210836_upc_edu_pe/IQD42hJ__iC6RrmlSigErE1GAQjztDQJi8ZXXrLb__oZZpc?e=8GetyP&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) |
 
 ## Anexo D. Formato para Evaluación de User Experience según Heurísticas
 
