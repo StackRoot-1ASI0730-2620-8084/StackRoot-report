@@ -1,0 +1,155 @@
+@startuml Trazza_ER_Diagram
+hide circle
+hide methods
+
+skinparam linetype ortho
+skinparam nodesep 70
+skinparam ranksep 60
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+skinparam class {
+    BackgroundColor #F9FBE7
+    BorderColor #9E9E9E
+    ArrowColor #424242
+    HeaderBackgroundColor #E8F5E9
+}
+
+entity "USUARIO" as usuario {
+  * id : uuid <<PK>>
+  --
+  email : varchar
+  password_hash : varchar
+  rol : varchar
+  estado_cuenta : varchar
+  creado_en : timestamp
+}
+
+entity "PERFIL_TRANSPORTISTA" as perfil_transportista {
+  * id : uuid <<PK>>
+  --
+  usuario_id : uuid <<FK>>
+  dni : varchar
+  nombres : varchar
+  apellidos : varchar
+  telefono : varchar
+  estado_verificacion : varchar
+}
+
+entity "PERFIL_EMPRENDEDOR" as perfil_emprendedor {
+  * id : uuid <<PK>>
+  --
+  usuario_id : uuid <<FK>>
+  razon_social : varchar
+  ruc : varchar
+  direccion_comercial : varchar
+  contacto : varchar
+}
+
+entity "VEHICULO" as vehiculo {
+  * id : uuid <<PK>>
+  --
+  transportista_id : uuid <<FK>>
+  placa : varchar
+  tipo_carroceria : varchar
+  capacidad_carga_kg : decimal
+  volumen_m3 : decimal
+}
+
+entity "RUTA_RETORNO" as ruta_retorno {
+  * id : uuid <<PK>>
+  --
+  transportista_id : uuid <<FK>>
+  vehiculo_id : uuid <<FK>>
+  origen : varchar
+  destino : varchar
+  fecha_salida : timestamp
+  capacidad_disponible_kg : decimal
+  estado : varchar
+}
+
+entity "SOLICITUD_ENVIO" as solicitud_envio {
+  * id : uuid <<PK>>
+  --
+  emprendedor_id : uuid <<FK>>
+  origen : varchar
+  destino : varchar
+  fecha_limite_recojo : timestamp
+  peso_kg : decimal
+  volumen_m3 : decimal
+  descripcion_carga : text
+  estado : varchar
+}
+
+entity "PROPUESTA_MATCH" as propuesta_match {
+  * id : uuid <<PK>>
+  --
+  solicitud_envio_id : uuid <<FK>>
+  ruta_retorno_id : uuid <<FK>>
+  monto_ofrecido : decimal
+  tarifa_acordada : decimal
+  estado : varchar
+  creado_en : timestamp
+}
+
+entity "VIAJE_LOGISTICO" as viaje_logistico {
+  * id : uuid <<PK>>
+  --
+  propuesta_match_id : uuid <<FK>>
+  fecha_recojo_real : timestamp
+  fecha_entrega_estimada : timestamp
+  estado_viaje : varchar
+}
+
+entity "INCIDENCIA" as incidencia {
+  * id : uuid <<PK>>
+  --
+  viaje_id : uuid <<FK>>
+  tipo_incidencia : varchar
+  descripcion : text
+  marca_tiempo : timestamp
+  atendida : boolean
+}
+
+entity "TRANSACCION_PAGO" as transaccion_pago {
+  * id : uuid <<PK>>
+  --
+  viaje_id : uuid <<FK>>
+  monto_total : decimal
+  comision_plataforma : decimal
+  monto_neto_transportista : decimal
+  estado_pago : varchar
+  actualizado_en : timestamp
+}
+
+entity "CALIFICACION" as calificacion {
+  * id : uuid <<PK>>
+  --
+  viaje_id : uuid <<FK>>
+  evaluador_id : uuid <<FK>>
+  evaluado_id : uuid <<FK>>
+  puntuacion : int
+  comentario : text
+  fecha : timestamp
+}
+
+' Relaciones
+usuario ||--o| perfil_transportista : "tiene"
+usuario ||--o| perfil_emprendedor : "tiene"
+
+perfil_transportista ||--o{ vehiculo : "registra"
+perfil_transportista ||--o{ ruta_retorno : "publica"
+vehiculo ||--o{ ruta_retorno : "asignado a"
+
+perfil_emprendedor ||--o{ solicitud_envio : "solicita"
+
+solicitud_envio ||--o{ propuesta_match : "recibe"
+ruta_retorno ||--o{ propuesta_match : "genera"
+
+propuesta_match ||--o| viaje_logistico : "deriva en"
+
+viaje_logistico ||--o{ incidencia : "registra"
+viaje_logistico ||--|| transaccion_pago : "genera"
+viaje_logistico ||--o{ calificacion : "recibe"
+
+@enduml
