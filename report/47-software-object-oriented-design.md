@@ -1,15 +1,6 @@
 # 4.7. Software Object-Oriented Design
 
-En esta sección, el equipo presenta los diagramas que detallan la implementación orientada a objetos de los componentes definidos en la arquitectura. La estructura refleja el uso del patrón arquitectónico de capas acoplado a Domain-Driven Design (DDD) bajo el framework ASP.NET Core (C#). 
-
-Las principales características evidenciadas en estos diagramas son:
-* **Uso de Inyección de Dependencias:** Acoplamiento débil a través de interfaces (`IService`, `IRepository`).
-* **Separación de Responsabilidades:** Controladores para la capa de presentación (REST), Servicios para la lógica de negocio, y Repositorios para el acceso a datos mediante Entity Framework Core.
-* **Agregados y Entidades de Dominio:** Clases ricas que encapsulan atributos y comportamientos clave del negocio.
-
-## 4.7.1. Class Diagrams
-
-A continuación se presenta el diagrama de clases correspondiente al Bounded Context Core de la plataforma: **Matchmaking & Routing**. Este diagrama ilustra cómo se estructura el emparejamiento entre la oferta (espacio en camiones) y la demanda (solicitudes de flete).
+A continuación se presenta el diagrama de clases correspondiente al Bounded Context Core de la plataforma: **Trazza**. Este diagrama ilustra cómo se estructura el emparejamiento entre la oferta (espacio en camiones) y la demanda (solicitudes de flete).
 
 ![Diagrama de Clases - Matchmaking](../assets/images/chapter4/software-object-oriented-design/class-diagram-matchmaking.png)
 
